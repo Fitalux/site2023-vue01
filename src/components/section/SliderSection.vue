@@ -26,8 +26,8 @@
               </div>
               <div class="img" aria-label="hidden">
                 <img :src="slider.iconImage1" :alt="slider.title" />
-                <img :src="slider.iconImage1" :alt="slider.title" />
-                <img :src="slider.iconImage1" :alt="slider.title" />
+                <img :src="slider.iconImage2" :alt="slider.title" />
+                <img :src="slider.iconImage3" :alt="slider.title" />
               </div>
               <div class="circle" aria-label="hidden">
                 <span class="circle c1"></span>
@@ -38,9 +38,8 @@
               </div>
             </div>
           </swiper-slide>
-          <!-- slider01 -->
 
-          <swiper-slide>
+          <swiper-slide v-for="(slider, index) in sliders" :key="index">
             <div class="slider s2 container">
               <div class="text">
                 <h3 v-html="slider.title"></h3>
@@ -49,8 +48,8 @@
               </div>
               <div class="img" aria-label="hidden">
                 <img :src="slider.iconImage1" :alt="slider.title" />
-                <img :src="slider.iconImage1" :alt="slider.title" />
-                <img :src="slider.iconImage1" :alt="slider.title" />
+                <img :src="slider.iconImage2" :alt="slider.title" />
+                <img :src="slider.iconImage3" :alt="slider.title" />
               </div>
               <div class="circle" aria-label="hidden">
                 <span class="circle c1"></span>
@@ -61,9 +60,8 @@
               </div>
             </div>
           </swiper-slide>
-          <!-- slider02 -->
 
-          <swiper-slide>
+          <swiper-slide v-for="(slider, index) in sliders" :key="index">
             <div class="slider s3 container">
               <div class="text">
                 <h3 v-html="slider.title"></h3>
@@ -72,8 +70,8 @@
               </div>
               <div class="img" aria-label="hidden">
                 <img :src="slider.iconImage1" :alt="slider.title" />
-                <img :src="slider.iconImage1" :alt="slider.title" />
-                <img :src="slider.iconImage1" :alt="slider.title" />
+                <img :src="slider.iconImage2" :alt="slider.title" />
+                <img :src="slider.iconImage3" :alt="slider.title" />
               </div>
               <div class="circle" aria-label="hidden">
                 <span class="circle c1"></span>
@@ -84,7 +82,6 @@
               </div>
             </div>
           </swiper-slide>
-          <!-- slider03 -->
         </swiper>
       </div>
     </div>
@@ -93,7 +90,7 @@
 
 <script>
 // import Swiper core and required modules
-import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
+import { Navigation, Pagination, A11y, Autoplay } from "swiper";
 
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -102,7 +99,6 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 export default {
   props: {
@@ -122,7 +118,7 @@ export default {
     return {
       onSwiper,
       onSlideChange,
-      modules: [Navigation, Pagination, Scrollbar, A11y, Autoplay],
+      modules: [Navigation, Pagination, A11y, Autoplay],
     };
   },
   data: function () {
@@ -138,16 +134,16 @@ export default {
         {
           title: "MUSIC<br />Recommend",
           desc: "요즘 들을 거 없나? 싶을 때 취향을 강타할 MUSIC",
-          iconImage1: "./images/slider/sliderIcon02.png",
-          iconImage2: "./images/slider/sliderIcon03.png",
-          iconImage3: "./images/slider/sliderIcon04.png",
+          iconImage1: "./images/slider/sliderIcon04.png",
+          iconImage2: "./images/slider/sliderIcon05.png",
+          iconImage3: "./images/slider/sliderIcon06.png",
         },
         {
           title: "MUSIC<br />Recommend",
           desc: "요즘 들을 거 없나? 싶을 때 취향을 강타할 MUSIC",
-          iconImage1: "./images/slider/sliderIcon02.png",
-          iconImage2: "./images/slider/sliderIcon03.png",
-          iconImage3: "./images/slider/sliderIcon04.png",
+          iconImage1: "./images/slider/sliderIcon07.png",
+          iconImage2: "./images/slider/sliderIcon08.png",
+          iconImage3: "./images/slider/sliderIcon09.png",
         },
       ],
     };

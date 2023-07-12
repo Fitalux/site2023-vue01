@@ -1,24 +1,10 @@
-# site-vue01
+#SITE - VUE
 
-## Project setup
-```
-npm install
-```
+#VUE JS
+vue.js를 이용해서 만든 웹 표준 사이트
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+vue 3버전을 사용
+-swiper를 사용하여 이미지 슬라이드를 구현
+-Sass 사용
+-router를 이용한 주소 구현
+-component 구현
