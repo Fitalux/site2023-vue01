@@ -19,13 +19,13 @@
             :alt="movie.title"
             v-else
           />
+          <em>
+            <span className="title">{{ movie.title }}</span>
+            <span className="star">{{
+              Math.floor(movie.vote_average * 100) / 100
+            }}</span>
+          </em>
         </a>
-        <em>
-          <span className="title">{{ movie.title }}</span>
-          <span className="star">{{
-            Math.floor(movie.vote_average * 100) / 100
-          }}</span>
-        </em>
       </li>
     </ul>
   </div>
@@ -49,12 +49,12 @@ export default {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 2%;
     font-family: "NanumSquareNeo";
 
     li {
       width: 24%;
       position: relative;
-      margin-bottom: 2%;
 
       .title {
         font-size: 20px;

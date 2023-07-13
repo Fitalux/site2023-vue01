@@ -1,5 +1,5 @@
 <template>
-  <div class="movie__search">
+  <div class="movie__search container">
     <h2 class="blind">검색하기</h2>
     <input
       ref="inputRef"

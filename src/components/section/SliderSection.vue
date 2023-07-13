@@ -192,9 +192,12 @@ export default {
         img {
           &:nth-child(1) {
             position: absolute;
-            width: 300px;
-            left: -30px;
+            width: 250px;
+            top: 50px;
+            left: -70px;
             transform: rotate(-25deg);
+            background-position: center center;
+            background-size: contain;
           }
           &:nth-child(2) {
             position: absolute;

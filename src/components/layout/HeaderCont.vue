@@ -7,12 +7,12 @@
   >
     <div class="header__inner container">
       <h1 class="header__logo">
-        <router-link to="/">Web Standard Site - Project2023</router-link>
+        <router-link to="/">VUE Site - Project2023</router-link>
       </h1>
       <nav class="header__nav" role="navigation">
         <ul>
           <li><router-link to="/intro">Intro</router-link></li>
-          <li><router-link to="/image">이미지</router-link></li>
+          <li><router-link to="/card">Card</router-link></li>
           <li><router-link to="/youtube">유튜브</router-link></li>
           <li><router-link to="/unsplash">Unsplash</router-link></li>
           <li><router-link to="/movie">영화</router-link></li>
